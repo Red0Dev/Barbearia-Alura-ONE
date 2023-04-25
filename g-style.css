@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap');
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+header{
+    background-color: #CCCCCC;
+    padding: 20px 0;
+}
+.caixa{
+    width: 940px;
+    position: relative;
+    margin: auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #C79C19;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    background-image: url(Imagens/bg.jpg);
+    padding: 40px 0;
+}
+.logo{
+    display: block;
+    margin: auto;
+}
+.icone{
+    width: 3em;
+    border-radius: 5px;
+}
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    .caixa{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+        width: 100%;
+        margin: auto;
+        margin: 0 0 0 8px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    .caixa{
+        width: auto;
+        padding: 0 2em;
+    }
+    nav{
+        padding: 0 2em;
+    }
+}

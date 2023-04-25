@@ -1,0 +1,69 @@
+/* main */
+main{
+    width: 940px;
+    margin: auto;
+}
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.input-padrao{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.novidades{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.enviar:hover{
+    transition: 0.5s;
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+table{
+    margin: 20px 0px 40px;
+}
+thead{
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    main{
+        width: auto;
+    }
+    main{
+        padding: 0 1em;
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    main{
+        width: auto;
+    }
+    main{
+        padding: 0 1em;
+    }
+}

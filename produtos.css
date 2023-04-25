@@ -1,0 +1,76 @@
+
+/* main */
+.produtos{
+    width: 940px;
+    position: relative;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.produtos li{
+    flex: 1;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 0.75%;
+    padding: 30px 20px;
+    border: 2px solid black;
+    border-end-end-radius: 50px;
+    border-start-start-radius: 50px;
+}
+.produtos li img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* explicação do display flex
+Aqui estamos definindo que a lista ul.produtos deve ter um display flexível e envolver os elementos quando necessário com a propriedade flex-wrap. Em seguida, estamos definindo que cada elemento li deve ter um flex de 1, que height deve ser fixado em 400 pixels e que deve ser exibido como um flex com uma direção de coluna com o flex-direction. Também estamos usando justify-content: space-between para garantir que os elementos sejam espaçados uniformemente e margin: 0 10px para adicionar uma margem em torno dos elementos. Por fim, estamos usando object-fit: cover para garantir que as imagens preencham todo o espaço disponível em seu contêiner.
+
+Com essas regras, seus elementos li devem ter a mesma altura e ficar alinhados verticalmente em todas as telas.*/
+
+.produtos li:hover{
+    border-color: #C79C19;
+}
+.produtos li:hover h2{
+    font-size: 34px;
+}
+.produtos li:active{
+    border-color: #088C19;
+}
+.produtos h2{
+    font: bold 30px serif;
+}
+.produto-preco{
+    font-size: 18px;
+}
+.produto-preco{
+    font: bold 22px serif;
+    margin: 10px 0 0;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait){
+    .produtos{
+        padding-bottom: 3em;
+        padding-top: 3em;
+        width: auto;
+        display: block;
+    }
+    .produtos li{
+        width: 70%;
+        margin: auto;
+        margin-top: 2em;
+    }
+}
+@media screen and (max-width: 1000px) and (orientation: landscape){
+    .produtos{
+        width: auto;
+        padding: 50px 20px;
+    }
+}
