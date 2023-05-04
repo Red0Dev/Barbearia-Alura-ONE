@@ -80,17 +80,8 @@ em strong{
 }
 
 @media screen and (max-width: 480px) and (orientation: portrait) {
-    .caixa, .conteudo-beneficios{
+    .conteudo-beneficios{
         width: auto;
-    }
-    h1{
-        text-align: center;
-    }
-    nav{
-        position: static;
-    }
-    nav ul{
-        padding: 0 0 0 0;
     }
     .utensilios{
         width: 80px;
